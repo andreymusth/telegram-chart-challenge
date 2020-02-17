@@ -14,9 +14,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        chartView.setData(loadFromAssets())
-//        chartView.invalidate()
-//        testButton.setOnClickListener { chartView.removeOnePath() }
+        chartView.setData(loadFromAssets())
+        chartView.invalidate()
+        testButton.setOnClickListener { chartView.removeOnePath() }
     }
 
     private fun loadFromAssets(): ChartData {
